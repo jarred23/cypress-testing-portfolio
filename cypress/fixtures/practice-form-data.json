@@ -1,0 +1,14 @@
+{
+  "firstName": "Jarred",
+  "lastName": "Rheeder",
+  "email": "jarred@example.com",
+  "gender": "Male",
+  "mobile": "1234567890",
+  "dateOfBirth": "1990-01-01",
+  "subjects": ["Maths", "Physics"],
+  "hobbies": ["Sports", "Reading"],
+  "picture": "sample.jpg",
+  "currentAddress": "123 Cypress Lane",
+  "state": "NCR",
+  "city": "Delhi"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "cypress-testing-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project showcasing Cypress test automation",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^14.5.3",
+    "cypress-file-upload": "^5.0.8",
+    "ts-loader": "^9.5.2"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.4"
+  }
+}
