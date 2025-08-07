@@ -3,9 +3,12 @@ import webpackPreprocessor from '@cypress/webpack-preprocessor';
 
 export default defineConfig({
   e2e: {
-    baseUrl: 'https://www.saucedemo.com',
     specPattern: 'cypress/e2e/**/*.cy.{ts,tsx,js}',
     defaultCommandTimeout: 60000,
+    retries: {
+      runMode: 1,
+      openMode: 0
+    },
     setupNodeEvents(on, config) {
       const options = {
         webpackOptions: {
