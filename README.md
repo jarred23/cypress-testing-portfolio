@@ -38,22 +38,17 @@ This portfolio contains Cypress tests targeting several demo applications:
 * **SauceDemo:** UI tests for the SauceDemo ecommerce demo site, covering login and product interactions  
   URL: [https://www.saucedemo.com](https://www.saucedemo.com)
 
-* **Book Store Application:** UI and API tests for the Book Store web application on DemoQA  
-  URL: [https://demoqa.com/books](https://demoqa.com/books)
-
 The project also includes GitHub Actions integration for CI/CD, API tests using Cypress, reusable custom commands, and fixtures for test data.
 
 ---
 
 ## Test Suites
 
-| Suite Name          | Description                                                                 | Location                         |
-| -------------------| --------------------------------------------------------------------------- | -------------------------------- |
-| Admin Dashboard     | Tests authentication, navigation, and user management on OrangeHRM demo     | `cypress/e2e/admin-dashboard`    |
-| Form Validation     | Validates forms and widgets with various inputs on DemoQA                   | `cypress/e2e/form-validation`    |
-| SauceDemo           | Covers login, adding/removing products, and checkout flows                  | `cypress/e2e/saucedemo`          |
-| Book Store UI       | Tests UI interactions like login, book selection, and deletion              | `cypress/e2e/bookstore-ui`       |
-| Book Store API      | Validates endpoints for user creation, token generation, and book management| `cypress/e2e/bookstore-api`      |
+| Suite Name          | Description                                                             | Location                         |
+|---------------------|-------------------------------------------------------------------------| -------------------------------- |
+| Admin Dashboard     | Tests authentication, navigation, and user management on OrangeHRM demo | `cypress/e2e/admin-dashboard`    |
+| Form Validation     | Validates forms and widgets with various inputs on DemoQA               | `cypress/e2e/form-validation`    |
+| SauceDemo           | Covers login, adding/removing products, and checkout flows              | `cypress/e2e/saucedemo`          |
 
 ---
 
@@ -66,8 +61,6 @@ cypress-testing-portfolio/
 │   │   ├── admin-dashboard/         # OrangeHRM UI tests
 │   │   ├── form-validation/         # Form and widget tests (DemoQA)
 │   │   ├── saucedemo/               # SauceDemo product tests
-│   │   ├── bookstore-ui/            # Book Store Application UI tests
-│   │   └── bookstore-api/           # Book Store Application API tests
 │   ├── fixtures/                    # Test data (users, forms, books)
 │   │   ├── practice-form-data.json
 │   │   ├── test-data.json
@@ -78,8 +71,6 @@ cypress-testing-portfolio/
 │   │   ├── e2e/
 │   │   ├── e2e.ts
 │   │   └── index.d.ts
-│   ├── screenshots/                 # Screenshots from failed tests
-│   └── videos/                      # Test run videos
 ├── .github/workflows/
 │   └── cypress_workflow.yml         # GitHub Actions CI configuration
 ├── cypress.config.ts                # Cypress and baseUrl configuration
